@@ -22,10 +22,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Code formatting
-
-[Prettier and Eslint with Angular](https://justangular.com/blog/configure-prettier-and-eslint-with-angular): Configure Prettier and ESLint with Angular 🎨
-
 ## Dependencies
 
 ### Dev dependencies
@@ -34,7 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![help git linter](https://raw.githubusercontent.com/legend80s/commit-msg-linter/master/assets/demo-7-compressed.png)
 
 [Prettier](https://www.npmjs.com/package/prettier): Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
-
-[EsLint](https://www.npmjs.com/package/eslint): ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 
 ### Prod dependencies

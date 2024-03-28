@@ -33,4 +33,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Git commit msg linter](https://www.npmjs.com/package/git-commit-msg-linter): A lightweight, independent, 0 configurations and joyful git commit message linter.👀 Watching your every git commit message INSTANTLY 🚀.
 ![help git linter](https://raw.githubusercontent.com/legend80s/commit-msg-linter/master/assets/demo-7-compressed.png)
 
+[Prettier](https://www.npmjs.com/package/prettier): Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
+
+[EsLint](https://www.npmjs.com/package/eslint): ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+
 ### Prod dependencies

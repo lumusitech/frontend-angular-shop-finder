@@ -22,6 +22,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## Code formatting
+
+[Prettier and Eslint with Angular](https://justangular.com/blog/configure-prettier-and-eslint-with-angular): Configure Prettier and ESLint with Angular 🎨
+
 ## Dependencies
 
 ### Dev dependencies

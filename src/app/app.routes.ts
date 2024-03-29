@@ -15,6 +15,11 @@ export const routes: Routes = [
       import('./dashboard/dashboard.routes').then((m) => m.routes),
   },
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'shop',
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: 'shop',

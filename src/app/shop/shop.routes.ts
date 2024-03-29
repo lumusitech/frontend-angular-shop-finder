@@ -14,13 +14,14 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'details',
+        path: ':id',
         loadComponent: () =>
           import('./shop-details/shop-details.component').then(
             (m) => m.ShopDetailsComponent,
           ),
       },
-      { path: '**', redirectTo: 'list' },
+      { path: '', redirectTo: 'list', pathMatch: 'full' },
+      { path: '**', redirectTo: 'list', pathMatch: 'full' },
     ],
   },
 ];

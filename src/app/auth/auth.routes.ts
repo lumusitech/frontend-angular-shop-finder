@@ -18,6 +18,7 @@ export const routes: Routes = [
             (m) => m.RegisterComponent,
           ),
       },
+      { path: '', pathMatch: 'full', redirectTo: 'login' },
       { path: '**', pathMatch: 'full', redirectTo: 'login' },
     ],
   },

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, type OnInit } from '@angular/core';
+import type { Shop } from '@app/shop/models/shop.interface';
+import { ShopService } from '@app/shop/services/shop.service';
 import { ShopCardComponent } from '@shop/components/shop-card/shop-card.component';
 
 @Component({
@@ -8,4 +10,11 @@ import { ShopCardComponent } from '@shop/components/shop-card/shop-card.componen
   templateUrl: './shop-list.component.html',
   styles: ``,
 })
-export class ShopListComponent {}
+export class ShopListComponent implements OnInit {
+  shops: Shop[] = [];
+  private readonly _shopService = inject(ShopService);
+
+  ngOnInit(): void {
+    this.shops = this._shopService.getAll();
+  }
+}

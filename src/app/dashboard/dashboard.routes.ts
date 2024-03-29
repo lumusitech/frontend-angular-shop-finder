@@ -9,12 +9,12 @@ export const routes: Routes = [
       {
         path: 'admin',
         loadComponent: () =>
-          import('./admin/admin.component').then((m) => m.AdminComponent),
+          import('./pages/admin/admin.component').then((m) => m.AdminComponent),
       },
       {
         path: 'user',
         loadComponent: () =>
-          import('./user/user.component').then((m) => m.UserComponent),
+          import('./pages/user/user.component').then((m) => m.UserComponent),
       },
       { path: '', pathMatch: 'full', redirectTo: 'admin' },
       { path: '**', pathMatch: 'full', redirectTo: 'admin' },

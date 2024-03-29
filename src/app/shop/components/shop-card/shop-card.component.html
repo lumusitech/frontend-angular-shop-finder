@@ -3,8 +3,9 @@
 >
   <img
     class="w-full object-cover transition-all hover:object-left-top md:h-36 lg:h-48"
-    [src]="shop().image"
-    alt="blog"
+    [src]="shop().image!"
+    alt="{{ shop().name }}"
+    loading="lazy"
   />
   <div class="p-6">
     <h2

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SearchIconComponent } from '../icons/search-icon/search-icon.component';
 
 @Component({
-  selector: 'app-finder',
+  selector: 'shared-finder',
   standalone: true,
-  imports: [],
+  imports: [SearchIconComponent],
   templateUrl: './finder.component.html',
   styles: ``,
 })

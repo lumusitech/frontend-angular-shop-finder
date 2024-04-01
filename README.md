@@ -32,3 +32,27 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Prettier](https://www.npmjs.com/package/prettier): Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
 
 ### Prod dependencies
+
+## Note for deploy in Netlify
+
+Solucionar Error Page not Found (404) en despliegue a Netlify
+(en redirect o al recargar)
+
+- In folder src of project, create the file \_redirects with the next content:
+
+  ```txt
+  /*  /index.html 200
+  ```
+
+- Into angular.json, add into projects.architect.build.assets:
+
+  ```txt
+  "src/_redirects"
+  ```
+
+- Commit into GitHub for Netlify re deploy
+  git add .
+  git commit -m "message commit"
+  git push origin main
+
+- try (reload caché)

@@ -13,7 +13,7 @@
 <div
   [ngClass]="{
     'z-20 opacity-100': uiService.showMenu() === true,
-    'z-0 opacity-0': uiService.showMenu() === false
+    'z-0 hidden opacity-0': uiService.showMenu() === false
   }"
   class="fixed inset-0 bg-slate-800/75 backdrop-blur-sm transition-all duration-300"
   (click)="uiService.closeMenu()"

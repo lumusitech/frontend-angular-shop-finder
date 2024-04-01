@@ -13,8 +13,12 @@ const navbar: NavbarItem[] = [
     link: 'dashboard',
   },
   {
-    title: 'contact us',
+    title: 'contacto',
     link: 'contact-us',
+  },
+  {
+    title: 'negocios',
+    link: 'shop/list',
   },
 ];
 

@@ -1,10 +1,14 @@
-<main class="relative h-screen min-w-[350px]">
-  <shared-sidebar />
+@defer {
+  <main class="relative h-screen min-w-[350px]">
+    <shared-sidebar />
 
-  <shared-header />
+    <shared-header />
 
-  <section>
-    <router-outlet />
-  </section>
-  <shared-footer />
-</main>
+    <section>
+      <router-outlet />
+    </section>
+    <shared-footer />
+  </main>
+} @loading {
+  <div class="h-screen w-full bg-slate-800 text-3xl"></div>
+}

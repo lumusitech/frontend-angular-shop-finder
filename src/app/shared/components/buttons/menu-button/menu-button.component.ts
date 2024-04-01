@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { UiService } from '@app/shared/services/ui.service';
+import { UiService } from '@app/shared/services/ui/ui.service';
 import { MenuIconComponent } from '../../icons/menu-icon/menu-icon.component';
 
 @Component({

@@ -3,8 +3,10 @@ export interface Shop {
   name: string;
   category: string;
   description?: string;
+  phone?: string;
   whatsapp?: string;
   email?: string;
+  website?: string;
   location?: string;
   image?: string;
   updated_at?: Date;

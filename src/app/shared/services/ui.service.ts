@@ -8,11 +8,9 @@ export class UiService {
   readonly showMenu = this.showMenuSignal.asReadonly();
 
   openMenu() {
-    this.showMenuSignal.set(true);
     console.log(this.showMenuSignal());
   }
   closeMenu() {
-    this.showMenuSignal.set(false);
     console.log(this.showMenuSignal());
   }
 }

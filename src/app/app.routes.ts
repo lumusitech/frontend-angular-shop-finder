@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
   {
@@ -13,6 +14,10 @@ export const routes: Routes = [
     path: 'dashboard',
     loadChildren: () =>
       import('./dashboard/dashboard.routes').then((m) => m.routes),
+  },
+  {
+    path: 'contact-us',
+    component: ContactComponent,
   },
   {
     path: '',

@@ -1,10 +1,10 @@
-<nav class="flex flex-nowrap items-center justify-center">
+<nav class="mt-6 flex flex-col text-white">
   @for (item of navMenuService.navItems(); track $index) {
-    <shared-navbar-item
+    <shared-sidebar-item
       title="{{ item.title }}"
       link="{{ item.link }}"
       icon="{{ item.icon }}"
-      class="ml-2"
+      (click)="uiService.closeMenu()"
     />
   }
 </nav>

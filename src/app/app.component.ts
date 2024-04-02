@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
+import { SvgIconComponent } from './shared/components/icons/svg-icon/svg-icon.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 
 @Component({
@@ -14,6 +15,7 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
     FooterComponent,
     SidebarComponent,
     CommonModule,
+    SvgIconComponent,
   ],
   templateUrl: './app.component.html',
 })

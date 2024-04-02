@@ -1,0 +1,11 @@
+<div
+  [routerLink]="link()"
+  class="flex h-16 translate-x-0 cursor-pointer items-center gap-3 pl-10 text-2xl transition-all duration-200 hover:translate-x-2 hover:rounded-md lg:hover:bg-orange-600"
+>
+  @if (icon()) {
+    <shared-svg-icon [iconName]="icon()!" />
+  }
+  <a>
+    {{ title() }}
+  </a>
+</div>

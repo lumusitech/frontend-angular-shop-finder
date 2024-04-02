@@ -1,6 +1,11 @@
 <div
   [routerLink]="link()"
-  class="cursor-pointer rounded-lg p-2 hover:scale-105 hover:bg-orange-600"
+  class="inline-flex cursor-pointer gap-1 rounded-lg p-2 transition-all hover:scale-110 hover:bg-orange-600"
 >
-  <a>{{ title() }}</a>
+  @if (icon()) {
+    <shared-svg-icon [iconName]="icon()!" />
+  }
+  <a>
+    {{ title() }}
+  </a>
 </div>

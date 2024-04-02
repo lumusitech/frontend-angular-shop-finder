@@ -1,11 +1,11 @@
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { ShopIconComponent } from '../../icons/shop-icon/shop-icon.component';
+import { SvgIconComponent } from '../../icons/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'shared-logo-button',
   standalone: true,
-  imports: [ShopIconComponent, RouterLink],
+  imports: [RouterLink, SvgIconComponent],
   templateUrl: './logo-button.component.html',
   styles: ``,
 })

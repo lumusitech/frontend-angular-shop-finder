@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { SearchIconComponent } from '../icons/search-icon/search-icon.component';
+import { SvgIconComponent } from '../icons/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'shared-finder',
   standalone: true,
-  imports: [SearchIconComponent],
+  imports: [SvgIconComponent],
   templateUrl: './finder.component.html',
   styles: ``,
 })

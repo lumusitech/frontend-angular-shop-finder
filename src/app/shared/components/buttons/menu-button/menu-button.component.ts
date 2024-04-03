@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { UiService } from '@app/shared/services/ui/ui.service';
-import { MenuIconComponent } from '../../icons/menu-icon/menu-icon.component';
+import { SvgIconComponent } from '../../icons/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'shared-menu-button',
   standalone: true,
-  imports: [MenuIconComponent],
+  imports: [SvgIconComponent],
   templateUrl: './menu-button.component.html',
   styles: ``,
 })

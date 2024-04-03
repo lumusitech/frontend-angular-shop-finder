@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { UiService } from '@app/shared/services/ui/ui.service';
-import { CloseIconComponent } from '../../icons/close-icon/close-icon.component';
+import { SvgIconComponent } from '../../icons/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'shared-close-button',
   standalone: true,
-  imports: [CloseIconComponent],
+  imports: [SvgIconComponent],
   templateUrl: './close-button.component.html',
   styles: ``,
 })

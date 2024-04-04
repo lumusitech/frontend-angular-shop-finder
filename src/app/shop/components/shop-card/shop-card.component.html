@@ -2,7 +2,7 @@
   class="h-full overflow-hidden rounded-lg border-2 border-gray-800 hover:shadow-lg hover:shadow-slate-800"
 >
   <img
-    [routerLink]="['/shop', shop().id]"
+    (click)="onclick()"
     class="w-full cursor-pointer object-cover transition-all hover:object-left-top md:h-36 lg:h-48"
     [src]="shop().image!"
     alt="{{ shop().name }}"

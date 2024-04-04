@@ -78,4 +78,8 @@ export class ShopService {
   getAll(): Shop[] {
     return SHOPS;
   }
+
+  getById(id: number): Shop | undefined {
+    return SHOPS[0];
+  }
 }

@@ -1,6 +1,7 @@
 import { Component, inject, input } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { SvgIconComponent } from '@app/shared/components/icons/svg-icon/svg-icon.component';
+import { UiService } from '@app/shared/services/ui/ui.service';
 import type { Shop } from '@app/shop/models/shop.interface';
 
 @Component({
@@ -11,10 +12,13 @@ import type { Shop } from '@app/shop/models/shop.interface';
   styles: ``,
 })
 export class ShopCardComponent {
-  router = inject(Router);
+  private readonly router = inject(Router);
+  private readonly uiService = inject(UiService);
+
   shop = input.required<Shop>();
 
   onclick() {
     this.router.navigate(['shop', this.shop().id]);
+    this.uiService.setScrollStart();
   }
 }

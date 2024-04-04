@@ -1,6 +1,7 @@
 <nav class="flex flex-nowrap items-center justify-center">
   @for (item of navMenuService.navItems(); track $index) {
     <shared-navbar-item
+      (click)="uiService.setScrollStart()"
       title="{{ item.title }}"
       link="{{ item.link }}"
       icon="{{ item.icon }}"

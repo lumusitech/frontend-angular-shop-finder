@@ -13,4 +13,8 @@ export class UiService {
   closeMenu() {
     this.showMenuSignal.set(false);
   }
+
+  setScrollStart() {
+    window.scrollTo({ behavior: 'smooth', top: 0, left: 0 });
+  }
 }

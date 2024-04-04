@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
 import { SvgIconComponent } from './shared/components/icons/svg-icon/svg-icon.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { UiService } from './shared/services/ui/ui.service';
 
 @Component({
   selector: 'app-root',
@@ -19,4 +20,6 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
   ],
   templateUrl: './app.component.html',
 })
-export class AppComponent {}
+export class AppComponent {
+  public readonly uiService = inject(UiService);
+}

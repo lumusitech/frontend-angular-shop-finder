@@ -13,4 +13,9 @@ import { SidebarItemComponent } from '../sidebar-item/sidebar-item.component';
 export class SidebarMenuComponent {
   public readonly navMenuService = inject(NavMenuService);
   public readonly uiService = inject(UiService);
+
+  closeMenu() {
+    window.scrollTo({ behavior: 'smooth', top: 0, left: 0 });
+    this.uiService.closeMenu();
+  }
 }

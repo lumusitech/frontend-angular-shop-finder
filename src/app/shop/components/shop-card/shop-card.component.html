@@ -1,9 +1,9 @@
 <div
-  class="h-full overflow-hidden rounded-lg border-2 border-gray-800 hover:shadow-lg hover:shadow-slate-800"
+  class="flex h-full flex-col justify-between rounded-lg border-2 border-gray-800 hover:shadow-lg hover:shadow-slate-800"
 >
   <img
     (click)="onclick()"
-    class="w-full cursor-pointer object-cover transition-all hover:object-left-top md:h-36 lg:h-48"
+    class="h-2/5 w-full cursor-pointer object-cover transition-all hover:object-left-top md:h-36 lg:h-48"
     [src]="shop().image!"
     alt="{{ shop().name }}"
     loading="lazy"
@@ -19,18 +19,18 @@
     <h1 class="title-font mb-3 text-lg font-medium text-white">
       {{ shop().name }}
     </h1>
-    <p class="mb-3 overflow-auto leading-relaxed">
+    <p class="mb-3 leading-relaxed">
       {{ shop().description }}
     </p>
 
     <!-- Contact -->
     <div class="border-t border-slate-800 py-3">
-      <div class="flex gap-1">
-        <a href="https://rb.gy/eyxbe4">
+      <a href="https://rb.gy/eyxbe4">
+        <div class="flex gap-1">
           <shared-svg-icon iconName="whatsapp" />
           <p class="ml-2 leading-relaxed">{{ shop().whatsapp }}</p>
-        </a>
-      </div>
+        </div>
+      </a>
       <a
         href="mailto:lumusika@gmail.com?subject=Consulta sobre camaras&body=Hola, me comunico para solicitarte informacion sobre camaras de seguridad"
       >

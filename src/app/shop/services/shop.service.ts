@@ -5,7 +5,7 @@ const SHOPS: Shop[] = [
   {
     id: 1,
     name: 'Kiosco Argentino',
-    description: 'Kiosco Argentino, un lugar de confianza a su servicio',
+    description: 'Kiosco Argentino, un lugar de confianza a su servicio.',
     category: 'Kiosco',
     active: true,
     email: 'kiosco.argentino@email.com',
@@ -16,7 +16,7 @@ const SHOPS: Shop[] = [
   {
     id: 2,
     name: 'Almacén Norte',
-    description: 'Todo lo que necesitás en un solo lugar',
+    description: 'Todo lo que necesitás en un solo lugar.',
     category: 'Almacén',
     active: true,
     email: 'almacennorte@email.com',
@@ -27,7 +27,7 @@ const SHOPS: Shop[] = [
   {
     id: 3,
     name: 'Ferretería La Nueva',
-    description: 'Todos los insumos para su hogar, al mejor precio',
+    description: 'Todos los insumos para su hogar, al mejor precio.',
     category: 'Ferretería',
     active: true,
     email: 'ferreterialanueva@email.com',
@@ -39,7 +39,7 @@ const SHOPS: Shop[] = [
     id: 4,
     name: 'Supermercado Día',
     description:
-      'Los mejores productos, siempre al mejor precio. Contamos con delivery',
+      'Los mejores productos, siempre al mejor precio. Contamos con delivery Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corrupti assumenda dolorem culpa illo non modi ad earum voluptate necessitatibus, dolore perferendis aut rem nequecumque possimus eius. Laborum, saepe!',
     category: 'Supermercado',
     active: true,
     email: 'supermercado@email.com',
@@ -50,7 +50,7 @@ const SHOPS: Shop[] = [
     id: 5,
     name: "Weiss's Burger",
     description:
-      'Ven a disfrutar en familia o solicita la mejor hamburguesa y te la enviamos a tu domicilio',
+      'Ven a disfrutar en familia o solicita la mejor hamburguesa y te la enviamos a tu domicilio.',
     category: 'Fast food',
     active: true,
     email: 'weissburger@email.com',
@@ -61,7 +61,7 @@ const SHOPS: Shop[] = [
   {
     id: 6,
     name: 'Corralón Centro',
-    description: 'Todos los materiales para la construcción de tu casa',
+    description: 'Todos los materiales para la construcción de tu casa.',
     category: 'Construcción',
     active: true,
     email: 'corralon@email.com',

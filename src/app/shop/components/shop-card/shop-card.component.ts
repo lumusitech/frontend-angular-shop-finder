@@ -1,3 +1,4 @@
+import { SlicePipe } from '@angular/common';
 import { Component, inject, input } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { SvgIconComponent } from '@app/shared/components/icons/svg-icon/svg-icon.component';
@@ -7,7 +8,7 @@ import type { Shop } from '@app/shop/models/shop.interface';
 @Component({
   selector: 'shop-card',
   standalone: true,
-  imports: [RouterLink, SvgIconComponent],
+  imports: [RouterLink, SvgIconComponent, SlicePipe],
   templateUrl: './shop-card.component.html',
   styles: ``,
 })

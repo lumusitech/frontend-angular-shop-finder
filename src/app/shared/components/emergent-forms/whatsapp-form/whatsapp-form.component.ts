@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from '@app/shared/services/ui/ui.service';
 
 @Component({
-  selector: 'app-whatsapp-form',
+  selector: 'shared-whatsapp-form',
   standalone: true,
   imports: [],
   templateUrl: './whatsapp-form.component.html',
-  styles: ``
+  styles: ``,
 })
 export class WhatsappFormComponent {
-
+  public readonly uiService = inject(UiService);
 }

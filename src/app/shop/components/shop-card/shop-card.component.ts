@@ -14,7 +14,7 @@ import type { Shop } from '@app/shop/models/shop.interface';
 })
 export class ShopCardComponent {
   private readonly router = inject(Router);
-  private readonly uiService = inject(UiService);
+  public readonly uiService = inject(UiService);
 
   shop = input.required<Shop>();
 

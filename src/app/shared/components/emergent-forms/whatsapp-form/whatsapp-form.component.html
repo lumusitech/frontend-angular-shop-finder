@@ -1,1 +1,56 @@
-<p>whatsapp-form works!</p>
+@if (uiService.showWhatsappForm()) {
+  <div class="fixed inset-0 z-50 bg-slate-900/75">
+    <section class="animate__animated animate__fadeIn p-16">
+      <div class="mb-12 flex flex-col text-center">
+        <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
+          Envíales un Whatsapp
+        </h1>
+      </div>
+      <div class="mx-auto md:w-2/3 lg:w-1/2">
+        <div class="-m-2 flex flex-wrap">
+          <div class="w-full p-2 sm:w-1/2">
+            <div class="relative">
+              <label for="name" class="text-sm leading-7 text-gray-400"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+              />
+            </div>
+          </div>
+
+          <div class="w-full p-2">
+            <div class="relative">
+              <label for="message" class="text-sm leading-7 text-gray-400"
+                >Mensaje</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 px-3 py-1 text-base leading-6 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+              ></textarea>
+            </div>
+          </div>
+          <div class="flex w-full justify-center gap-2 p-2">
+            <button
+              (click)="uiService.closeWhatsappForm()"
+              class="flex w-32 justify-center rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+            >
+              Enviar
+            </button>
+
+            <button
+              (click)="uiService.closeWhatsappForm()"
+              class="flex w-32 justify-center rounded border-0 bg-red-500 px-8 py-2 text-lg text-white hover:bg-red-600 focus:outline-none"
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+}

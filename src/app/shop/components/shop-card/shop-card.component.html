@@ -32,8 +32,11 @@
     <div class="flex flex-col gap-2 border-y border-slate-800 py-8">
       <!-- TODO: Make this dynamic -->
       <!-- <a href="https://rb.gy/eyxbe4"> -->
-      <a href="#">
-        <div class="flex gap-1 transition-all hover:translate-x-1">
+      <a>
+        <div
+          class="flex gap-1 transition-all hover:translate-x-1"
+          (click)="uiService.openWhatsappForm()"
+        >
           <shared-svg-icon iconName="whatsapp" />
           <p class="ml-2 leading-relaxed">{{ shop().whatsapp }}</p>
         </div>
@@ -42,8 +45,11 @@
       <!-- <a
         href="mailto:lumusika@gmail.com?subject=Consulta sobre camaras&body=Hola, me comunico para solicitarte informacion sobre camaras de seguridad"
       > -->
-      <a href="#">
-        <div class="flex gap-1 transition-all hover:translate-x-1">
+      <a>
+        <div
+          class="flex gap-1 transition-all hover:translate-x-1"
+          (click)="uiService.openEmailForm()"
+        >
           <shared-svg-icon iconName="email" />
           <p class="ml-2 leading-relaxed">{{ shop().email }}</p>
         </div>

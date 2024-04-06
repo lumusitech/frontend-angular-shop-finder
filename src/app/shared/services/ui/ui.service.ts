@@ -13,15 +13,17 @@ export class UiService {
   private showEmailFormSignal = signal<boolean>(false);
   readonly showEmailForm = this.showEmailFormSignal.asReadonly();
 
+  isModalOpen(): boolean {
+    return (
+      this.showMenu() || this.showWhatsappForm() || this.showEmailFormSignal()
+    );
+  }
+
   openMenu() {
     this.showMenuSignal.set(true);
   }
   closeMenu() {
     this.showMenuSignal.set(false);
-  }
-
-  setScrollStart() {
-    window.scrollTo({ behavior: 'smooth', top: 0, left: 0 });
   }
 
   openWhatsappForm() {
@@ -38,5 +40,9 @@ export class UiService {
 
   closeEmailForm() {
     this.showEmailFormSignal.set(false);
+  }
+
+  setScrollStart() {
+    window.scrollTo({ behavior: 'smooth', top: 0, left: 0 });
   }
 }

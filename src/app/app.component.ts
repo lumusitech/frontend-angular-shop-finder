@@ -4,7 +4,9 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
+import { EmailFormComponent } from './shared/components/emergent-forms/email-form/email-form.component';
 import { SvgIconComponent } from './shared/components/icons/svg-icon/svg-icon.component';
+import { OverlayComponent } from './shared/components/overlay/overlay.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { UiService } from './shared/services/ui/ui.service';
 
@@ -19,6 +21,8 @@ import { UiService } from './shared/services/ui/ui.service';
     CommonModule,
     SvgIconComponent,
     CarouselComponent,
+    EmailFormComponent,
+    OverlayComponent,
   ],
   templateUrl: './app.component.html',
 })

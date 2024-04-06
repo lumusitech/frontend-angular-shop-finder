@@ -2,11 +2,10 @@
   <section class="animate__animated animate__fadeIn p-16">
     <div class="mb-12 flex w-full flex-col text-center">
       <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
-        Contact Us
+        Contáctenos
       </h1>
-      <p class="mx-auto text-base leading-relaxed lg:w-2/3">
-        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify.
+      <p class="mx-auto text-lg leading-relaxed lg:w-2/3">
+        Envíenos su consulta acerca de cómo formar parte de nuestra comunidad.
       </p>
     </div>
     <div class="mx-auto md:w-2/3 lg:w-1/2">
@@ -14,7 +13,7 @@
         <div class="w-full p-2 sm:w-1/2">
           <div class="relative">
             <label for="name" class="text-sm leading-7 text-gray-400"
-              >Name</label
+              >Nombre</label
             >
             <input
               type="text"
@@ -40,7 +39,7 @@
         <div class="w-full p-2">
           <div class="relative">
             <label for="message" class="text-sm leading-7 text-gray-400"
-              >Message</label
+              >Mensaje</label
             >
             <textarea
               id="message"
@@ -51,15 +50,16 @@
         </div>
         <div class="w-full p-2">
           <button
+            [routerLink]="['/']"
             class="mx-auto flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none"
           >
-            Button
+            Enviar
           </button>
         </div>
         <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
-          <a class="text-indigo-400">{{ "some@email.com" }}</a>
+          <a class="text-indigo-400">{{ "shop-finder@email.com" }}</a>
           <p class="my-5 leading-normal">
-            49 Smith St. <br />Saint Cloud, MN 56301
+            Los andes 3421, <br />Malvinas Argentinas, CP 1615
           </p>
           <span class="inline-flex">
             <a class="text-gray-500">

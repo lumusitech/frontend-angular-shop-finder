@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './contact.component.html',
   styles: ``,
 })
-export class ContactComponent {}
+export class ContactComponent {
+  onClick() {
+    console.log('clicked');
+  }
+}

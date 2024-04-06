@@ -54,7 +54,6 @@ const SHOPS: Shop[] = [
     category: 'Fast food',
     active: true,
     email: 'weissburger@email.com',
-    whatsapp: '123456789',
     image:
       'https://www.sillasmesas.es/blog/wp-content/webp-express/webp-images/uploads/2019/10/Claves-para-montar-una-hamburgueseria.jpg.webp',
   },

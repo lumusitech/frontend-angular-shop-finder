@@ -1,9 +1,12 @@
-<div class="flex">
-  <img class="" [src]="shop.image!" alt="{{ shop.name }}" loading="lazy" />
+<div class="flex flex-col sm:flex-row">
+  <img
+    class="object-cover sm:w-7/12"
+    [src]="shop.image!"
+    alt="image of {{ shop.name }}"
+    loading="lazy"
+  />
 
-  <div
-    class="inset-1/2 flex w-full flex-1 flex-col justify-between bg-black/50 p-6"
-  >
+  <div class="flex flex-col justify-between bg-black/50 p-6 sm:w-5/12">
     <!-- General Information -->
     <div>
       <h2

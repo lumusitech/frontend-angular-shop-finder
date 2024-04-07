@@ -78,7 +78,7 @@ export class ShopService {
     return SHOPS;
   }
 
-  getById(id: number): Shop | undefined {
-    return SHOPS[0];
+  getById(id: number) {
+    return SHOPS.find((shop) => shop.id === +id);
   }
 }

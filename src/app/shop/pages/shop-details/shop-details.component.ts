@@ -19,7 +19,6 @@ export class ShopDetailsComponent implements OnInit {
   shop!: Shop;
 
   ngOnInit(): void {
-    console.log(this.shopId());
     this.shop = this.shopService.getById(this.shopId())!;
   }
 }

@@ -1,5 +1,6 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { UiService } from '@app/shared/services/ui/ui.service';
+import type { Shop } from '@app/shop/models/shop.interface';
 
 @Component({
   selector: 'shared-whatsapp-form',
@@ -10,4 +11,6 @@ import { UiService } from '@app/shared/services/ui/ui.service';
 })
 export class WhatsappFormComponent {
   public readonly uiService = inject(UiService);
+
+  shop = input.required<Shop>();
 }

@@ -33,7 +33,7 @@
         <a>
           <div
             class="flex gap-1 transition-all hover:translate-x-1"
-            (click)="uiService.openWhatsappForm()"
+            (click)="uiService.openWhatsappForm(shop)"
           >
             <shared-svg-icon iconName="whatsapp" />
             <p class="ml-2 leading-relaxed">{{ shop.whatsapp }}</p>
@@ -48,7 +48,7 @@
         <a>
           <div
             class="flex gap-1 transition-all hover:translate-x-1"
-            (click)="uiService.openEmailForm()"
+            (click)="uiService.openEmailForm(shop)"
           >
             <shared-svg-icon iconName="email" />
             <p class="ml-2 leading-relaxed">{{ shop.email }}</p>

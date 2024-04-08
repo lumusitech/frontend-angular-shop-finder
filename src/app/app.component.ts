@@ -10,6 +10,7 @@ import { SvgIconComponent } from './shared/components/icons/svg-icon/svg-icon.co
 import { OverlayComponent } from './shared/components/overlay/overlay.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { UiService } from './shared/services/ui/ui.service';
+import { ShopService } from './shop/services/shop.service';
 
 @Component({
   selector: 'app-root',
@@ -31,4 +32,5 @@ import { UiService } from './shared/services/ui/ui.service';
 })
 export class AppComponent {
   public readonly uiService = inject(UiService);
+  public readonly shopService = inject(ShopService);
 }

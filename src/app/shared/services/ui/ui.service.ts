@@ -1,9 +1,13 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, inject, signal } from '@angular/core';
+import type { Shop } from '@app/shop/models/shop.interface';
+import { ShopService } from '@app/shop/services/shop.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UiService {
+  private readonly shopService = inject(ShopService);
+
   private showMenuSignal = signal<boolean>(false);
   readonly showMenu = this.showMenuSignal.asReadonly();
 
@@ -26,7 +30,10 @@ export class UiService {
     this.showMenuSignal.set(false);
   }
 
-  openWhatsappForm() {
+  openWhatsappForm(shop: Shop) {
+    console.log(shop);
+
+    this.shopService.setActiveShop(shop);
     this.showWhatsappFormSignal.set(true);
   }
 
@@ -34,7 +41,10 @@ export class UiService {
     this.showWhatsappFormSignal.set(false);
   }
 
-  openEmailForm() {
+  openEmailForm(shop: Shop) {
+    console.log(shop);
+
+    this.shopService.setActiveShop(shop);
     this.showEmailFormSignal.set(true);
   }
 

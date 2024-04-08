@@ -1,8 +1,8 @@
 <main class="relative min-h-screen min-w-[350px]">
   <!-- emergent windows or side-menu -->
   <shared-overlay />
-  <shared-email-form />
-  <shared-whatsapp-form />
+  <shared-email-form [shop]="shopService.activeShop!" />
+  <shared-whatsapp-form [shop]="shopService.activeShop!" />
   <shared-sidebar />
   <shared-header />
 

@@ -74,11 +74,17 @@ const SHOPS: Shop[] = [
   providedIn: 'root',
 })
 export class ShopService {
+  activeShop: Shop | null = null;
+
   getAll(): Shop[] {
     return SHOPS;
   }
 
   getById(id: number) {
     return SHOPS.find((shop) => shop.id === +id);
+  }
+
+  setActiveShop(shop: Shop) {
+    this.activeShop = shop;
   }
 }

@@ -7,7 +7,7 @@ export interface Shop {
   whatsapp?: string;
   email?: string;
   website?: string;
-  location?: string;
+  location?: { latitude: number; longitud: number };
   image?: string;
   updated_at?: Date;
   created_at?: Date;

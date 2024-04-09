@@ -1,77 +1,83 @@
-<div class="flex flex-col sm:flex-row">
-  <img
-    class="object-cover sm:w-7/12"
-    [src]="shop.image!"
-    alt="Name: {{ shop.name }}"
-    loading="lazy"
-  />
+@if (shop) {
+  <div class="flex flex-col sm:flex-row">
+    <img
+      class="object-cover sm:w-7/12"
+      [src]="shop.image!"
+      alt="Name: {{ shop.name }}"
+      loading="lazy"
+    />
 
-  <div class="flex flex-col justify-between bg-black/50 p-6 sm:w-5/12">
-    <!-- General Information -->
-    <div>
-      <h2
-        class="title-font mb-1 text-xs font-medium tracking-widest text-gray-500"
-      >
-        {{ shop.category }}
-      </h2>
-      <h1 class="title-font mb-3 text-lg font-medium text-white">
-        {{ shop.name }}
-      </h1>
-      <p class="mb-6 leading-relaxed">
-        {{ shop.description }}
-        @if (shop.description!.length > 200) {
-          ...
+    <div class="flex flex-col justify-between bg-black/50 p-6 sm:w-5/12">
+      <!-- General Information -->
+      <div>
+        <h2
+          class="title-font mb-1 text-xs font-medium tracking-widest text-gray-500"
+        >
+          {{ shop.category }}
+        </h2>
+        <h1 class="title-font mb-3 text-lg font-medium text-white">
+          {{ shop.name }}
+        </h1>
+        <p class="mb-6 leading-relaxed">
+          {{ shop.description }}
+          @if (shop.description!.length > 200) {
+            ...
+          }
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="flex flex-col gap-2 border-y border-slate-800 py-8">
+        <!-- TODO: Make this dynamic -->
+        <!-- <a href="https://rb.gy/eyxbe4"> -->
+        @if (shop.whatsapp) {
+          <a>
+            <div
+              class="flex gap-1 transition-all hover:translate-x-1"
+              (click)="uiService.openWhatsappForm(shop)"
+            >
+              <shared-svg-icon iconName="whatsapp" />
+              <p class="ml-2 leading-relaxed">{{ shop.whatsapp }}</p>
+            </div>
+          </a>
         }
-      </p>
-    </div>
-
-    <!-- Contact -->
-    <div class="flex flex-col gap-2 border-y border-slate-800 py-8">
-      <!-- TODO: Make this dynamic -->
-      <!-- <a href="https://rb.gy/eyxbe4"> -->
-      @if (shop.whatsapp) {
-        <a>
-          <div
-            class="flex gap-1 transition-all hover:translate-x-1"
-            (click)="uiService.openWhatsappForm(shop)"
-          >
-            <shared-svg-icon iconName="whatsapp" />
-            <p class="ml-2 leading-relaxed">{{ shop.whatsapp }}</p>
-          </div>
-        </a>
-      }
-      <!-- TODO: Make this dynamic -->
-      <!-- <a
+        <!-- TODO: Make this dynamic -->
+        <!-- <a
         href="mailto:lumusika@gmail.com?subject=Consulta sobre camaras&body=Hola, me comunico para solicitarte informacion sobre camaras de seguridad"
       > -->
-      @if (shop.email) {
-        <a>
-          <div
-            class="flex gap-1 transition-all hover:translate-x-1"
-            (click)="uiService.openEmailForm(shop)"
-          >
-            <shared-svg-icon iconName="email" />
-            <p class="ml-2 leading-relaxed">{{ shop.email }}</p>
-          </div>
-        </a>
-      }
-    </div>
+        @if (shop.email) {
+          <a>
+            <div
+              class="flex gap-1 transition-all hover:translate-x-1"
+              (click)="uiService.openEmailForm(shop)"
+            >
+              <shared-svg-icon iconName="email" />
+              <p class="ml-2 leading-relaxed">{{ shop.email }}</p>
+            </div>
+          </a>
+        }
+      </div>
 
-    <!-- See more -->
-    <div class="mt-3 flex w-full justify-between">
-      <span
-        class="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-800 py-1 pr-3 text-sm leading-none text-gray-500 transition-all hover:scale-110 md:ml-0 lg:ml-auto"
-      >
-        <shared-svg-icon iconName="views" />
-        1.2K
-      </span>
+      <!-- See more -->
+      <div class="mt-3 flex w-full justify-between">
+        <span
+          class="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-800 py-1 pr-3 text-sm leading-none text-gray-500 transition-all hover:scale-110 md:ml-0 lg:ml-auto"
+        >
+          <shared-svg-icon iconName="views" />
+          1.2K
+        </span>
 
-      <span
-        class="inline-flex items-center text-sm leading-none text-gray-500 transition-all hover:scale-110"
-      >
-        <shared-svg-icon iconName="comments" />
-        6
-      </span>
+        <span
+          class="inline-flex items-center text-sm leading-none text-gray-500 transition-all hover:scale-110"
+        >
+          <shared-svg-icon iconName="comments" />
+          6
+        </span>
+      </div>
     </div>
   </div>
-</div>
+}
+
+@if (shop && shop.location) {
+  <shared-map />
+}

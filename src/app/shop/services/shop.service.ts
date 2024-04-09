@@ -10,6 +10,7 @@ const SHOPS: Shop[] = [
     active: true,
     email: 'kiosco.argentino@email.com',
     whatsapp: '123456789',
+    location: { latitude: 0, longitud: 0 },
     image:
       'https://www.voicesconsultancy.com/var/voicesconsultancy_com/storage/images/informes/el-kiosco-argentino/949-3-esl-AR/El-kiosco-argentino_full.jpg',
   },
@@ -21,6 +22,7 @@ const SHOPS: Shop[] = [
     active: true,
     email: 'almacennorte@email.com',
     whatsapp: '123456789',
+    location: { latitude: 0, longitud: 0 },
     image:
       'https://finde.latercera.com/wp-content/uploads/2019/10/Steven-Market-OK.jpg',
   },
@@ -32,6 +34,7 @@ const SHOPS: Shop[] = [
     active: true,
     email: 'ferreterialanueva@email.com',
     whatsapp: '123456789',
+    location: { latitude: 0, longitud: 0 },
     image:
       'https://tytenlinea.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-15-at-2.46.57-PM-800x445.png',
   },
@@ -44,6 +47,7 @@ const SHOPS: Shop[] = [
     active: true,
     email: 'supermercado@email.com',
     whatsapp: '123456789',
+    location: { latitude: 0, longitud: 0 },
     image: 'https://www.cronista.com/files/image/290/290021/5ffe009e76b06.jpg',
   },
   {
@@ -65,6 +69,7 @@ const SHOPS: Shop[] = [
     active: true,
     email: 'corralon@email.com',
     whatsapp: '123456789',
+    location: { latitude: 0, longitud: 0 },
     image:
       'https://www.corraloncentro.com/uploads/8/7/3/6/8736780/2628470_orig.png',
   },
